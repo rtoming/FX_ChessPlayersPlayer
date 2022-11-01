@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="298.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fx_chessplayers.Controller">
+   <children>
+      <Button fx:id="first" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#firstClick" text="|&lt;" />
+      <Button fx:id="prev" layoutX="85.0" layoutY="359.0" mnemonicParsing="false" onAction="#prevClick" text="&lt;&lt;" />
+      <Button fx:id="next" layoutX="164.0" layoutY="359.0" mnemonicParsing="false" onAction="#nextClick" text="&gt;&gt;" />
+      <Button fx:id="last" layoutX="232.0" layoutY="359.0" mnemonicParsing="false" onAction="#lastClick" text="&gt;|" />
+      <ImageView fx:id="imgV" fitHeight="150.0" fitWidth="200.0" layoutX="65.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/carlsen.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" layoutX="111.0" layoutY="42.0" text="NAME" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="elo" layoutX="103.0" layoutY="264.0" text="ELO Rating: " textFill="#f80808">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="years" layoutX="116.0" layoutY="313.0" text="Years: ">
+         <font>
+            <Font name="Calibri Italic" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
